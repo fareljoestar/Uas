@@ -1,0 +1,97 @@
+/* CSS untuk bagian kontak */
+.contact {
+  padding: 50px;
+  background-color: #f9f9f9;
+}
+
+.contact h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2.5em;
+  color: #333;
+}
+
+.contact p {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #777;
+}
+
+.contact .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.contact .map {
+  flex: 1;
+  min-width: 300px;
+  height: 300px;
+  border: none;
+  margin-bottom: 20px;
+}
+
+.contact form {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.contact .input-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.contact .input-group i {
+  margin-right: 10px;
+  color: #333;
+}
+
+.contact .input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+}
+
+.contact .input-group input:focus {
+  border-color:hsl(86, 45%, 54%);
+}
+
+.contact .btn {
+  display: inline-block;
+  width: 100%;
+  padding: 10px;
+  background:hsl(86, 45%, 54%);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  transition: background 0.3s;
+}
+
+.contact .btn:hover {
+  background:hsl(86, 45%, 54%);
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .contact .row {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .contact .map, .contact form {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+}
